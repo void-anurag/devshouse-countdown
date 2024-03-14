@@ -82,7 +82,7 @@
           </div>
           <div className="flex flex-col">
           <h1 className={`text-7xl max-w-7xl text-center leading-snug text-gray-300 ${museo.className}`}>
-          DEVSHOUSE&apos;24
+          DEVSHOUSE&#39;24
           </h1>
           <h2 className={`text-lg max-w-2xl text-center mt-[-10] text-gray-300 ${museo.className}`}>
             CODE. CONNECT. CREATE.
