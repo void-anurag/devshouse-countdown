@@ -1,6 +1,9 @@
+"use client "
 import { cn } from "@/utils/tailwind-utils";
+import { unstable_noStore } from "next/cache";
 
 export const NumberRotation = ({ number }: { number: number }) => {
+  unstable_noStore()
   const numbers = Array.from({ length: 60 }, (_, i) => i);
 
   // Determine the class for each number based on the current number

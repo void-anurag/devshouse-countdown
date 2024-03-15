@@ -10,6 +10,7 @@
   import Head from 'next/head';
   import React from 'react';
   import { CountdownTimer } from "@/components/countdown-timer";
+import { unstable_noStore } from "next/cache";
 
   const museo = MuseoModerno ({
     weight: "700",
@@ -21,6 +22,7 @@
   })
 
   export default function Home() {
+    unstable_noStore()
 
     const [currentFramework, setCurrentFramework] = useState<Framework>(frameworks[0]);
 
