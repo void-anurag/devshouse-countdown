@@ -12,6 +12,9 @@ export const calculateTimeToEvent = () => {
     const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
   
     return { days, hours, minutes, seconds };
+    console.log(minutes);
+    console.log(hours);
+    console.log(seconds);
   };
 
 // export const calculateTimeToEvent = () => {
