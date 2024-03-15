@@ -1,5 +1,8 @@
+import { unstable_noStore as noStore } from 'next/cache';
+
 export const calculateTimeToEvent = () => {
-    const eventDate = new Date("03/17/2024 05:00:00"); // October 12, 2023, 9 AM PT
+  noStore()
+  const eventDate = new Date("03/17/2024 05:00:00"); // October 12, 2023, 9 AM PT
     const currentDate = new Date();
     const timeRemaining = eventDate.getTime() - currentDate.getTime();
   

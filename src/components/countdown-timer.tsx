@@ -1,13 +1,16 @@
+"use client"
 import { calculateTimeToEvent } from "@/utils/countdown-utils";
 import { type Framework } from "@/utils/framework-utils";
 import { useState, useEffect } from "react";
 import { TimeUnit } from "./time-unit";
+import { unstable_noStore } from "next/cache";
 
 export const CountdownTimer = ({
   currentFramework,
 }: {
   currentFramework: Framework;
 }) => {
+  unstable_noStore()
   const [countdown, setCountdown] = useState(calculateTimeToEvent());
 
   useEffect(() => {
